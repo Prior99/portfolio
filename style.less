@@ -1,0 +1,66 @@
+@thin: #888;
+@very-thin: #AAA;
+@dark: #222;
+@link-color: #0275D8;
+
+a {
+    color: @link-color;
+}
+
+a.social {
+    color: black;
+}
+
+a.social:hover {
+    color: @link-color;
+}
+
+.container-main {
+    margin: 40px auto;
+    background: white;
+    padding: 100px 40px;
+    box-shadow: -1px 3px 2px 4px @dark;
+
+    .spaced {
+        padding: 20px 0px;
+    }
+
+    .lined {
+        border-top: 1px solid @very-thin;
+    }
+
+    h1 {
+        line-height: 1.5;
+    }
+
+    h2 {
+        color: @thin;
+        font-size: 20pt;
+    }
+
+    address {
+        p {
+            margin-bottom: 0.5pt;
+            i.padded {
+                padding-right: 0.75em;
+            }
+        }
+
+        .socials {
+            margin-top: 10px;
+        }
+    }
+
+    .foot {
+        color: @thin;
+        font-size: 12pt;
+    }
+
+    .centered {
+        text-align: center;
+    }
+}
+
+body {
+    background: #444;
+}
