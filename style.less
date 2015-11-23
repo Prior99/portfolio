@@ -38,6 +38,10 @@ a.social:hover {
         font-size: 20pt;
     }
 
+    h4 {
+        font-size: 16pt;
+    }
+
     address {
         p {
             margin-bottom: 0.5pt;
@@ -58,6 +62,35 @@ a.social:hover {
 
     .centered {
         text-align: center;
+    }
+
+    .projects {
+        img {
+            width:100%;
+        }
+        .project {
+            h4 {
+                a {
+                    display: none;
+                }
+            }
+        }
+        .project:hover {
+            h4 {
+                a {
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    .project-link {
+        color: @thin;
+        font-size: 16pt;
+    }
+
+    .project-link:hover {
+        color: @link-color;
     }
 }
 
